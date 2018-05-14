@@ -1,0 +1,56 @@
+{
+  "name": "nodewebappupdate",
+  "version": "1.0.0",
+  "description": "A simple Node React Mongo App using ES6",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set DEBUG=app & nodemon App.js",
+    "lint": "eslint App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/droconnel22/NodeWebAppUpdate.git"
+  },
+  "keywords": [
+    "Node",
+    "React",
+    "Es6",
+    "Mongo",
+    "Eslint"
+  ],
+  "author": "Dennis O'Connell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/droconnel22/NodeWebAppUpdate/issues"
+  },
+  "homepage": "https://github.com/droconnel22/NodeWebAppUpdate#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.4",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
